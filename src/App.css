@@ -1,0 +1,12 @@
+.row-container {
+  margin: 10;
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+.row-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.c1, .c2 {
+  margin-top: 7rem;
+}
+}

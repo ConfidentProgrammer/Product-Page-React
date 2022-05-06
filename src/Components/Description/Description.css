@@ -1,0 +1,120 @@
+*, html, body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.desc-container {
+    width: 95%;
+    margin: 30px auto;
+}
+.companyName {
+    color: hsl(26, 100%, 55%);
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: .9rem;
+}
+.productTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 40px;
+}
+.description-para {
+    color: rgba(41, 40, 40, 0.779);
+}
+.price-container {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+.price-percent-container {
+    display: flex;
+    width: 41%;
+    justify-content: space-between;
+    align-items: center;
+}
+.price-actual {
+    font-size: 1.5rem;
+    font-weight: 700; 
+}
+.price-discount {
+    color: hsl(26, 100%, 55%);
+    font-weight: bold;
+    background-color: hsl(25, 100%, 94%);
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+.price-before {
+    font-weight: 700;
+    text-decoration: line-through;
+    color: rgba(173, 169, 169, 0.778);
+    font-size: 1.1rem;
+}
+.quantity-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(223, 64%, 98%);
+    padding: 5px;
+    border-radius: 10px;
+    align-items: center;
+    height: 4rem;
+}
+.ops, .number {
+ 
+ padding: 5px;
+ font-size: 1.3rem;
+ font-weight: 700;
+
+}
+
+.ops {
+    font-size: 2rem;
+    color: hsl(26, 100%, 55%);
+}
+.addcart {
+margin-top: 15px;
+height: 3.7rem;
+background-color: hsl(26, 100%, 55%);
+color: white;
+text-align: center;
+line-height: 3.3rem;
+font-weight: 700;
+letter-spacing: 1px;
+border-radius: 4px;
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+.description-para {
+    margin-top: 40px;
+    width: 80%;
+    line-height: 25px;
+}
+.productTitle {
+    line-height: 50px;
+    font-size: 3rem;
+    width: 80%;
+}
+.desc-container {
+    margin-top: 7rem;
+    width: 80%;
+}
+.price-container {
+    display: block;
+}
+.price-percent-container {
+    width: 9rem;
+}
+.quantity-container {
+    width: 12rem;
+}
+.addcart {
+    width: 15rem;
+    margin-left: 20px;
+}
+.quan-button {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+ }
+    

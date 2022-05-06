@@ -1,0 +1,31 @@
+.car-container {
+    width:100% ;
+    text-align: center;
+}
+.photos {
+    width:100%;
+    height: 330px;
+    margin-top: 4rem;
+}
+.photos-container {
+    display: none;
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+    .photos {
+        width: 30rem;
+        height: 35rem;
+        border-radius:20px;
+    }
+    .photos-container {
+        display: flex;
+        width: 30rem;
+        margin: 30px auto;
+        justify-content: space-between;
+    }
+    .photos-c {
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius:10px;
+    }
+}
+    
