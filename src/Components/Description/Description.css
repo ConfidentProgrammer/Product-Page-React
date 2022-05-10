@@ -71,6 +71,11 @@
 .ops {
     font-size: 2rem;
     color: hsl(26, 100%, 55%);
+    transition: .1s all;
+}
+.ops:hover {
+    transform: scale(1.2);
+   
 }
 .addcart {
 margin-top: 15px;
@@ -82,6 +87,11 @@ line-height: 3.3rem;
 font-weight: 700;
 letter-spacing: 1px;
 border-radius: 4px;
+cursor: pointer;
+}
+.number {
+    color:black;
+    font-size: 1.5rem;
 }
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
 .description-para {

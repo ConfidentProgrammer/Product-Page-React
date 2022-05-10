@@ -3,7 +3,32 @@ import './Description.css'
 import iconPlus from '../../Images/icon-plus.svg'
 import iconMinus from '../../Images/icon-minus.svg'
 import iconCart from '../../Images/icon-cart.svg'
+import {useSelector, useDispatch} from 'react-redux'
+import {increment, decrement} from '../../Redux/Actions/counter'
+import {getAddedProduct} from '../../Redux/Actions/Name'
+import {useState} from 'react'
 function Description() {
+    const counter = useSelector(state => state.counter)
+    const productName = 'Fall Limited Edition Sneakers'
+    const dispatch = useDispatch();
+    const [selectedQuantity, setSelectedQuantity] = useState(0)
+    const [name, setName] = useState('');
+    const handleMinus = () => {
+        if(counter > 0)
+            dispatch(decrement())
+    }
+    const handlePlus = () => {
+        dispatch(increment())
+    }
+    const handleAddToCart = () => {
+        if(counter > 0) {
+            dispatch(getAddedProduct({
+                "Name":productName,
+                "Qty" : counter
+            }))  
+        }
+      
+    }
   return (
     <div className='desc-container'>
         <p className="companyName">SNEAKER COMPANY</p>
@@ -25,13 +50,13 @@ function Description() {
             </div>
 
         </div>
-        <div className="quan-button">
+        <div className="quan-button ">
         <div className="quantity-container">
-            <p className="minus ops"><img src={iconMinus} alt="" /></p>
-            <p className="number">0</p>
-            <p className="plus ops"><img src={iconPlus} alt="" /></p>
+            <p className="minus ops"><img onClick={handleMinus} src={iconMinus} alt="" /></p>
+            <p className="number ops">{counter}</p>
+            <p className="plus ops"><img onClick={handlePlus} src={iconPlus} alt="" /></p>
         </div>
-        <div className="addcart">
+        <div className="addcart" onClick={handleAddToCart}>
             <span className='cartphoto'><img src={iconCart} alt="" /></span>  &nbsp;&nbsp;&nbsp;Add to cart
         </div>
         </div>

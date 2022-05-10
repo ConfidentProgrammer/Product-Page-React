@@ -1,0 +1,44 @@
+.cart-container {
+    position: absolute;
+    max-width: 90%;
+    margin: 0 auto;
+    color: rgba(41, 40, 40, 0.779);
+    font-size: .9rem;
+    padding: 10px;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    top: 4.5rem;
+}
+.cartPhoto {
+    width: 3rem;
+    height:3rem;
+    border-radius: 5px;
+}
+.name {
+    margin:0;
+}
+
+.totalPrice {
+    color: black;
+    font-weight: 700;
+}
+.title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: black;
+}
+.empty {
+    font-size: 1.2rem;
+    text-align: center;
+}
+@media (min-width:1025px) { 
+.cart-container {
+    width: 22rem;
+    top: 4rem;
+    right: -33rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+}

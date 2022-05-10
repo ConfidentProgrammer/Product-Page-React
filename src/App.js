@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import Carousal from './Components/Carousal/Carousal';
 import Description from './Components/Description/Description';
+import Cart from './Components/Cart/Cart';
 import React, { Component }  from 'react';
 function App() {
   return (
